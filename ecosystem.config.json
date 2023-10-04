@@ -1,0 +1,8 @@
+{
+  "apps": [
+    {
+      "name": "mqtt",
+      "script": "dist/app.js"
+    }
+  ]
+}
