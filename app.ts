@@ -10,7 +10,8 @@ async function main() {
         console.log(licensePlate);
         await connectToRabbitMQ(licensePlate)
 
-        const randomDelay: number = Math.floor(Math.random() * (maxValue - minValue + 1)) + minValue;
+        //const randomDelay: number = Math.floor(Math.random() * (maxValue - minValue + 1)) + minValue;
+        const randomDelay: number = 1000
         console.log("next data in "+randomDelay / 1000 + "s")
         setTimeout(iteration, randomDelay);
     }
